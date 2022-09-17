@@ -91,10 +91,11 @@ const MainScreen = () => {
             </TouchableOpacity>
           </View>
         </View>
-        <Pressable
-          disabled={finish}
+        <TouchableOpacity
+          //   disabled={finish}
           onPress={() => {
             setTime(60);
+            setFinish(false);
           }}
           style={{
             marginTop: 30,
@@ -105,7 +106,7 @@ const MainScreen = () => {
             // width: '80%',
           }}>
           <Text style={{color: 'white', fontWeight: 'bold'}}>Reset</Text>
-        </Pressable>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
